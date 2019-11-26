@@ -1,0 +1,433 @@
+body{
+    margin: 0px;
+}
+
+/* header seaction start */
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    padding:0px 10px;
+}
+
+#navbar ul{
+    display: flex;
+    padding-left:5px;
+    margin-top: 10px;
+    padding-top: 2px;
+}
+
+li{
+    padding-left:15px;
+    margin: 0px;
+    list-style: none;
+    color: white;
+    font-size: 140%;
+    font-family: 'Manjari', sans-serif;
+}
+
+li:hover{
+        font-weight:bold;
+        /* border-top: 5px solid #54d154;  */
+        padding-left:15px;
+        margin: 0px;
+        font-size: 140%;
+        cursor: pointer;
+}
+
+#logo h2{
+    margin:5px 10px;
+    padding-right: 100px;
+    color: white;
+    font-family: 'Lobster', cursive;
+    letter-spacing: 0.9px;
+    font-size: 200%;
+}
+
+#search{
+    margin-top: 5px;
+    padding: 0px 10px 0px 10px;
+    padding-bottom:none;
+    border:2px solid grey;
+    border-radius: 80px;
+    width:210px;
+    height: 35px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+#search input{
+    border: none;
+    margin-top: 10px;
+    padding-top:3px;
+    background: none;
+}
+
+span{
+    margin-left: 20px;
+    color: #555454;
+}
+::placeholder {
+    color: #555454;
+    font-size: 150%;
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: #555454;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+   color: #555454;
+}
+
+.container{
+    background-color: rgba(0, 0, 0, 0);
+    height: 100vh;
+}
+
+header{
+    background-image: url(images/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+#main-bg{
+    text-align: center;
+    vertical-align: middle;
+}
+
+#main-bg h1{
+    font-size: 430%;
+    color: white;
+    margin-top: 22%;
+    font-family: 'Montserrat', sans-serif;
+}
+.main-btn{
+    padding:15px 35px;
+    background-color: #54d154;
+    color:white;
+    font-size: 24px;
+    font-weight: normal;
+    border:none;
+    border-radius: 50px;
+    letter-spacing: 1px;
+}
+/* header section end */
+
+/* what we do section start */
+.whatsection{
+   text-align: center;
+}
+
+#whathead h2{
+    font-size: 1.6em;
+    font-family: 'Montserrat', sans-serif;
+    color: #828181;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    margin-top: 50px;
+}
+
+.line{
+    border-bottom: 3px solid #828181;    
+    margin: 0px 750px;
+}
+#whathead p{
+    font-family: 'Montserrat', sans-serif;
+    color: #b7b3b3;
+    font-size: 1.2em;
+}
+section{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-around;
+    padding:20px;
+    margin-top: 40px;
+}
+#img-section-box{
+    width: 18%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.bg{
+    background-image: url(images/bk.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 135px;
+    height: 135px;    
+    margin-left: 70px;
+}
+.bg img{
+    padding-top: 28px;
+    align-content: center;
+}
+.img-box h3{
+    font-size: 21px;
+    color: #828181;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+.img-box p{
+    font-size: 16px;
+    color: #828181;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+    font-weight: normal;
+    text-align: center;
+}
+.img-box button{
+    padding:8px 25px;
+    background-color: #54d154;
+    color:white;
+    font-size: 16px;
+    font-weight: bold;
+    border:none;
+    border-radius: 50px;
+    letter-spacing: 1px;
+}
+/* what we do section end */
+
+/* our latest work start  */
+#latestsection{
+    text-align: center;
+    background-color: #54d154;
+}
+#olw h2{
+    font-size: 1.6em;
+    font-family: 'Montserrat', sans-serif;
+    color: #278627;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    margin-top: 50px;
+    padding-top: 50px;
+}
+
+#line{
+    border-bottom: 3px solid #278627;    
+    margin: 0px 750px;
+    padding-top: 5px;
+
+}
+#olw p{
+    font-family: 'Montserrat', sans-serif;
+    color: #2b9b2b;
+    font-size: 1.2em;
+}
+.btn-group{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    padding: 20px;
+}
+.btn{
+    padding: 8px 20px;
+    border: 2px solid #2b9b2b;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius:30px;
+    background-color: #2b9b2b;
+    color: white;
+    font-size:18px;
+    font-family: 'Montserrat', sans-serif;
+}
+.btn:hover{
+    background-color: #3e8e41;
+    cursor: pointer;
+}
+
+.btn2{
+    padding: 10px 30px;
+    border: 2px solid #2b9b2b;
+    color: #2b9b2b;
+    background-color: white;
+    font-size:18px;
+    font-family: 'Montserrat', sans-serif;
+}
+.btn2:hover{
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+.btn3{
+    padding: 10px 30px;
+    border: 2px solid #2b9b2b;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius:30px;
+    border-left: none;
+    background-color: white;
+    color:#2b9b2b ;
+    font-size:18px;
+    font-family: 'Montserrat', sans-serif;
+}
+.btn3:hover{
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+.img-section{
+    /* width: 70%; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* margin-left: 250px;   */
+}
+.img{
+    width: 160px;
+    height:160px;
+    margin: 20px 60px;
+}
+.view{
+    background-color: #2b9b2b;
+    border: none;
+    color: white;
+    font-size:18px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 2px 20px;
+    border-radius: 50px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.fa-arrow-right{
+    margin:0px 5px 10px 15px;
+    padding-top: 10px;
+}
+/* our latest work end */
+
+/* testimonial section start */
+#testimonial-section{
+    margin-top:50px;
+    text-align: center;
+}
+#testimonial-section h2{
+    letter-spacing: 1px;
+    font-size: 1.6em;
+}
+.msg{
+    margin-top: 80px;
+    text-align: center;
+}
+.msg-txt{
+    padding:10px 550px;
+    color: #444444;
+    font-size: 1.2em;
+}
+.msg-intro{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding:20px;
+}
+.msg-intro img{
+    width: 60px;
+    height: 60px;
+}
+.msg-name h4,.msg-post{
+    margin: 6px 5px;
+    padding:0px;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+}
+.msg-name h4{
+    color: #444444;
+}
+.msg-post{
+    color: #cccccc;
+    font-weight: bold;
+}
+/* testimonial section end */
+
+/* our happy client start */
+#client-section{
+    text-align: center;
+    background-color: #f2f1f1;
+    margin-top: 50px;
+ }
+ #ohc{
+     padding-top: 2px;
+ }
+ 
+ #ohc h2{
+     font-size: 1.6em;
+     font-family: 'Montserrat', sans-serif;
+     color: #828181;
+     letter-spacing: 1px;
+     font-weight: 400;
+     margin-bottom: 10px;
+     margin-top: 50px;
+ }
+ #ohc p{
+    font-family: 'Montserrat', sans-serif;
+    color: #b7b3b3;
+    font-size: 1.2em;
+}
+.ohc-img-section{
+     display: flex;
+    flex-wrap: wrap;
+    padding:50px;
+    justify-content: space-around;
+}
+.ohc-img{
+    padding-top: 20px;
+    margin: 30px 110px;
+}
+.view2{
+    background-color: #dddcdc;
+    border: none;
+    color: #a59d9d;
+    font-size:18px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 2px 20px;
+    border-radius: 50px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+/* our happy client end */
+
+/* meet the team start*/
+.meet-team{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #54d154;
+ }
+ #team{
+     padding-top: 2px;
+ }
+ 
+ #team h2{
+     font-size: 1.6em;
+     font-family: 'Montserrat', sans-serif;
+     color: #207b20;
+     letter-spacing: 1px;
+     font-weight: 400;
+     margin-bottom: 10px;
+     margin-top: 50px;
+ }
+ #team p{
+    font-family: 'Montserrat', sans-serif;
+    color: #207b20;
+    font-size: 1.2em;
+}
+.team-img{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.tm-img{
+    margin: 30px 70px;
+}
+.vt-line{
+     border-left: 3px solid #207b20;
+     height: 150px;
+     width: 15px;
+     margin-left: 50%;
+     text-align: center; 
+     margin-top: 10%;
+}
+/* meet the team end */
