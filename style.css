@@ -143,17 +143,17 @@ header{
     font-size: 1.2em;
 }
 section{
-    display: flex;
+    display: flex !important;
     flex-wrap: wrap;
     text-align: center;
-    justify-content: space-around;
+    justify-content:space-between;
     padding:20px;
     margin-top: 40px;
 }
 #img-section-box{
-    width: 18%;
+    width: 22%;
     display: flex;
-    justify-content: space-around;
+    justify-content:center;
 }
 
 .bg{
@@ -166,7 +166,6 @@ section{
 }
 .bg img{
     padding-top: 28px;
-    align-content: center;
 }
 .img-box h3{
     font-size: 21px;
@@ -174,6 +173,7 @@ section{
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 1px;
     font-weight: 600;
+    padding: 10px;
 }
 .img-box p{
     font-size: 16px;
@@ -233,14 +233,14 @@ section{
     
 }
 .btn{
-    padding: 8px 20px;
-    border: 2px solid #2b9b2b;
-    border-top-left-radius: 30px;
-    border-bottom-left-radius:30px;
-    background-color: #2b9b2b;
-    color: white;
-    font-size:18px;
-    font-family: 'Montserrat', sans-serif;
+    padding: 8px 20px !important;
+    border: 2px solid #2b9b2b !important;
+    border-top-left-radius: 30px !important;
+    border-bottom-left-radius:30px !important;
+    background-color: #2b9b2b !important;
+    color: white !important;
+    font-size:18px !important;
+    font-family: 'Montserrat', sans-serif !important;
     -webkit-box-shadow: 2px 2px 9px -2px rgba(0,0,0,0.75);
     -moz-box-shadow: 2px 2px 9px -2px rgba(0,0,0,0.75);
     box-shadow: 2px 2px 9px -2px rgba(0,0,0,0.75);
@@ -293,7 +293,7 @@ section{
 .img{
     width: 160px;
     height:160px;
-    margin: 20px 60px;
+    margin: 20px 50px;
 }
 
 .view{
@@ -326,11 +326,11 @@ section{
     font-size: 1.6em;
 }
 .msg{
-    margin-top: 80px;
+    margin-top: 50px;
     text-align: center;
 }
 .msg-txt{
-    padding:10px 550px;
+    padding:10px 480px;
     color: #444444;
     font-size: 1.2em;
 }
@@ -338,7 +338,7 @@ section{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding:20px;
+    padding:10px;
 }
 .msg-intro img{
     width: 60px;
@@ -358,6 +358,30 @@ section{
     color: #cccccc;
     font-weight: bold;
 }
+.carousel-control-prev-btn, .carousel-control-next-btn {
+    width: 40px !important;
+    height: 40px !important;
+    border: 1px solid #278627 !important;
+    box-sizing: border-box !important;
+    background-color: #278627 !important;
+    border-radius: 100% !important;
+    justify-content: center;
+    outline: none !important;
+
+}
+.carousel-control-next-icon{
+    margin-left: 5px;
+    margin-bottom: 0px;
+    margin-top: 5px;
+    padding-top: 10px;
+  }
+  .carousel-control-prev-icon{
+    margin-left: 0px;
+    margin-bottom: 0px;
+    margin-top: 5px;
+    padding-top: 10px;
+    
+  }
 /* testimonial section end */
 
 /* our happy client start */
