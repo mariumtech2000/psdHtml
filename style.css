@@ -1,19 +1,20 @@
 body{
     margin: 0px;
+    padding: 0px;
 }
 
 /* header seaction start */
 nav{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-    padding:0px 10px;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    padding:0px 10px !important;
     background-color: rgba(0, 0, 0,0.1);
 }
 
 #navbar ul{
-    display: flex;
+    display: flex !important;
     padding-left:5px;
     margin-top: 10px;
     padding-top: 2px;
@@ -46,23 +47,26 @@ li:hover{
     font-size: 200%;
 }
 
-#search{
+#search-section{
     margin-top: 5px;
-    padding: 0px 10px 0px 10px;
+    padding: 0px 8px 0px 8px;
     padding-bottom:none;
     border:2px solid grey;
     border-radius: 80px;
-    width:210px;
+    width:206px;
     height: 35px;
     background-color: rgba(255, 255, 255, 0.8);
+    box-sizing: content-box;
 }
 
-#search input{
+#search-section input{
     border: none;
-    margin-top: 10px;
+    margin-top: 5px;
     padding-top:3px;
     background: none;
 }
+
+
 
 span{
     margin-left: 20px;
@@ -70,7 +74,7 @@ span{
 }
 ::placeholder {
     color: #555454;
-    font-size: 150%;
+    font-size: 140%;
     opacity: 1; /* Firefox */
   }
   
@@ -88,30 +92,33 @@ span{
 }
 
 header{
-    background-image: url(images/background.png);
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.1), 
+        rgba(0, 0, 0, 0.1)
+      ),url("images/background.png");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
     height: 100vh;
 }
 
-#main-bg{
+#main-bk{
     text-align: center;
     vertical-align: middle;
 }
 
-#main-bg h1{
+#main-bk h1{
     font-size: 430%;
     color: white;
-    margin-top: 22%;
+    margin-top: 20%;
     font-family: 'Montserrat', sans-serif;
 }
 .main-btn{
-    padding:15px 35px;
+    margin: 10px 0px;
+    padding:10px 20px;
     background-color: #54d154;
     color:white;
-    font-size: 24px;
-    font-weight: normal;
+    font-size: 18px;
     border:none;
     border-radius: 50px;
     letter-spacing: 1px;
@@ -150,8 +157,14 @@ section{
     padding:20px;
     margin-top: 40px;
 }
+@media (max-width:1000px){
+    section{
+      padding: 20px;
+    justify-content: space-around;
+    }
+}
 #img-section-box{
-    width: 22%;
+    width: 15%;
     display: flex;
     justify-content:center;
 }
@@ -160,14 +173,17 @@ section{
     background-image: url(images/bk.png);
     background-repeat: no-repeat;
     background-size: contain;
-    width: 135px;
-    height: 135px;    
-    margin-left: 70px;
+    width: 130px;
+    height: 130px;    
+    margin-left: 90px;
+}
+.card-img-top{
+  padding: 16%;
 }
 .bg img{
     padding-top: 28px;
 }
-.img-box h3{
+.img-box h5{
     font-size: 21px;
     color: #828181;
     font-family: 'Montserrat', sans-serif;
@@ -183,7 +199,8 @@ section{
     font-weight: normal;
     text-align: center;
 }
-.img-box button{
+.img-box .button{
+    margin-top: 40px;
     padding:8px 25px;
     background-color: #54d154;
     color:white;
@@ -195,6 +212,10 @@ section{
     -webkit-box-shadow: 2px 2px 9px -2px rgba(0,0,0,0.75);
     -moz-box-shadow: 2px 2px 9px -2px rgba(0,0,0,0.75);
     box-shadow: 2px 2px 9px -2px rgba(0,0,0,0.75);
+}
+.card{
+    margin-top: 20px;
+    text-align: center;
 }
 /* what we do section end */
 
@@ -227,11 +248,13 @@ section{
 }
 .btn-group{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     margin: 20px;
     padding: 20px;
     
 }
+
 .btn{
     padding: 8px 20px !important;
     border: 2px solid #2b9b2b !important;
@@ -314,6 +337,28 @@ section{
     margin:0px 5px 10px 15px;
     padding-top: 10px;
 }
+@media (max-width:500){
+    .img{
+        margin: 5px 10px;
+    }
+}
+@media (max-width:477px){
+    .btn{
+        border-radius:30px !important;
+        margin-top: 10px;
+    }
+    .btn2{
+        border-radius:30px;
+        margin-top: 10px;
+        padding: 10px 80px !important;
+    }
+    .btn3{
+        border-radius:30px;
+        margin-top: 10px;
+        padding: 10px 80px !important;
+    }
+ 
+}
 /* our latest work end */
 
 /* testimonial section start */
@@ -374,14 +419,62 @@ section{
     margin-bottom: 0px;
     margin-top: 5px;
     padding-top: 10px;
-  }
-  .carousel-control-prev-icon{
+}
+.carousel-control-prev-icon{
     margin-left: 0px;
     margin-bottom: 0px;
     margin-top: 5px;
     padding-top: 10px;
-    
-  }
+}
+@media (max-width:1090px){
+    .msg-txt{
+        padding: 10px 200px;
+    }
+    #whathead{
+        margin: 10px;
+    }
+}
+@media (max-width:1120px){
+    .msg-txt{
+        padding: 10px 200px;
+    }
+    #whathead{
+        margin: 10px;
+    }
+}
+@media (max-width:750px){
+    .msg-txt{
+        padding: 10px 200px;
+    }
+    #whathead{
+        margin: 10px;
+    }
+}
+@media (max-width:670px){
+    .msg-txt{
+        padding: 10px 150px;
+    }
+    #whathead{
+        margin: 10px;
+    }
+}
+@media (max-width:500px){
+    .msg-txt{
+        padding: 10px 80px;
+    }
+    #whathead{
+        margin: 10px;
+    }
+}
+@media (max-width:400px){
+    .msg-txt{
+        padding: 10px 50px;
+    }
+    #whathead{
+        margin: 10px;
+    }
+}
+
 /* testimonial section end */
 
 /* our happy client start */
@@ -392,6 +485,11 @@ section{
  }
  #ohc{
      padding-top: 2px;
+ }
+ @media (max-width:900px){
+    #ohc{
+        margin: 10px;
+    }
  }
  
  #ohc h2{
@@ -409,14 +507,17 @@ section{
     font-size: 1.2em;
 }
 .ohc-img-section{
+    height: 85px;
      display: flex;
     flex-wrap: wrap;
-    padding: 30px;
+    padding: 10px;
+    margin: 20px;
     justify-content: space-around;
 }
 .ohc-img{
-    padding-top: 20px;
-    margin: 30px 110px;
+    /* padding-top: 20px;
+    margin: 20px 80px; */
+    width:40%;
 }
 .view2{
     background-color: #dddcdc;
@@ -499,8 +600,8 @@ img:hover{
 }
 #media{
    background-color: #c5e9c5;
-   margin: 5px;
-   padding-top: 2px;
+   margin: 2px;
+   padding: 5px 2px;
    border-top-left-radius: 30px;
    border-radius: 30px;
    -webkit-box-shadow: 2px 2px 9px -2px rgba(0,0,0,0.75);
