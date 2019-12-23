@@ -144,7 +144,8 @@ header {
 
 .line {
     border-bottom: 3px solid #828181;
-    margin: 0px 750px;
+    width: 3%;
+    margin: 0 auto;
 }
 
 #whathead p {
@@ -176,7 +177,7 @@ section {
 }
 
 .bg {
-    background-image: url(images/bk.png);
+    background-image: url('images/bk.png');
     background-repeat: no-repeat;
     background-size: contain;
     width: 130px;
@@ -252,8 +253,8 @@ section {
 
 #line {
     border-bottom: 3px solid #278627;
-    margin: 0px 750px;
-    padding-top: 5px;
+    width: 3%;
+    margin: 0 auto;
 }
 
 #olw p {
@@ -631,13 +632,8 @@ section {
 }
 
 img:hover {
-    -ms-transform: scale(1.5);
-    /* IE 9 */
-    -webkit-transform: scale(1.5);
-    /* Safari 3-8 */
-    transform: scale(1.2);
-    transition-delay: 0.5s;
     cursor: pointer;
+    opacity: 0.5;
 }
 
 .vt-line {
@@ -672,13 +668,8 @@ img:hover {
 }
 
 #media img:hover {
-    -ms-transform: scale(1.5);
-    /* IE 9 */
-    -webkit-transform: scale(1.5);
-    /* Safari 3-8 */
-    transform: scale(1.2);
-    transition-delay: 0.3s;
     cursor: pointer;
+    opacity: 0.5;
 }
 
 #work-section {
@@ -709,145 +700,130 @@ img:hover {
     display: flex;
     justify-content: space-around;
     background-color: #333333;
+    padding-top: 40px;
 }
-.about-section{
-    width:30%;
+@media (max-width:900px){
+    #footer-section{
+        flex-wrap: wrap;
+    }
+}
+
+.about-section {
     font-size: 13px;
     color: #cccccc;
     font-family: "Montserrat";
     text-align: center;
-    padding: 10px  25px;
-    margin:50px 30px;
+}
+.about-section h3{
+    font-size: 1.6em;
+    letter-spacing: 3px;
+    color: #dddddd;
+    font-family: "Montserrat";
+    font-weight: lighter;
     text-align: center;
+}
 
-}
-.abt-para{
+.abt-para {
     padding: 10px 20px;
+    margin: 10px 45px;
 }
-#media2{
+
+#media2 {
     background-color: #e6e7e6;
     margin: 0px 110px;
     padding-top: 5px;
     padding-bottom: 5px;
     border-radius: 30px;
-    width: 110px;
+    /* width: 110px; */
     text-align: center;
 }
-#media2 img{
+
+#media2 img {
     padding: 2px 5px 2px 5px;
 }
-.re-post-div{
-    width: 70%;
-    margin: 20px 0;
-    border: 2px solid black;
 
+.re-post-div {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    /* width: 75%; */
+    /* margin: 20px 0; */
+    /* padding: 10px; */
+    /* border: 2px solid black; */
 }
-.re-post-div,.recent-img{
+
+.re-post-div, .recent-img {
     display: flex;
     flex-wrap: wrap;
-    padding: 10px;
-   
+    padding: 5px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*#about-us{
-    width: 308px;
-    font-size: 16px;
-    color: #cccccc;
-    font-family: "Proxima Nova";
-    text-align: center;
-    padding: 10px;
+.rc-img {
+    border-radius: 3px;
+    margin: 5px 8px;
 }
-h3{
+
+.txt p {
+    color: #c2c2c2;
+    font-size: 15px;
+    margin-top: 5px;
+    margin-bottom: 2px;
+    letter-spacing: 1.2px;
+}
+
+.txt button {
+    padding: 1px 10px;
+    border: none;
     font-size: 12px;
+    color: white;
+    border-radius: 2px;
+}
+
+.green {
+    background-color: #54d154;
+}
+
+.yellow {
+    background-color: #ffba00;
+}
+
+.blue {
+    background-color: #089dea;
+}
+
+.orange {
+    background-color: #f34d04;
+}
+
+.about-section {
+    border: 2px solid black;
+    width: 100%;
+}
+
+.recent-post-section {
+    border: 2px solid black;
+    width: 100%;
+}
+
+.contact-us-section {
+    border: 2px solid black;
+    width: 100%;
+}
+
+.recent-post-section h3 {
+    font-size: 1.4em;
     letter-spacing: 3px;
     color: #dddddd;
     font-family: "Montserrat";
-    font-weight: 300;
+    font-weight: lighter;
     text-align: center;
 }
-#line3{
-    border-bottom: 3px solid #cccccc;    
-    margin: 0px 125px;
-    padding-top: 0px;
-}
-#media2{
-    background-color: #e6e7e6;
-    margin: 0px 90px;
-    padding-top: 5px;
-    padding-bottom: 10px;
-    border-top-left-radius: 30px;
-    border-radius: 30px;
-    width: 100px;
-    height: 28px;
-    text-align: center;
-}
-#media2 img{
-    padding: 2px 5px 2px 5px;
-}
-.rc-heading{
-    font-size: 22px;
-    letter-spacing: 3px;
-    color: #dddddd;
-    font-family: "Montserrat";
-    font-weight: 300;
-    margin-left: 80px;
-}
-#line4{
-    border-bottom: 3px solid #cccccc;    
-    margin: 0px 100px;
-    padding-top: 0px;
+
+.heading-line {
+    border-bottom: 3px solid #cccccc;
+    width: 10%;
+    margin: 0 auto;
 }
 
-#recent-post{
-    display: flex;
-    flex-wrap: wrap;
-    width: 30%;
-    border: 1px solid black;
-}
-.re-post-div{
-    display: flex;
-    justify-content: center;
-
-}
-.recent-img{
-    display: flex;
-    
-}
-.left{
-    text-align: left;
-}
-.rc-img{
-    border-radius: 10px;
-    margin: 5px 6px;
-}
-#recent-post p{
-    color: #a6a6a6;
-    font-size: 18px;
-} */
 
 /* footer section end */
