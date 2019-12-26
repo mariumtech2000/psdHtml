@@ -62,7 +62,6 @@ li:hover {
 #search-section input {
     border: none;
     margin-top: 5px;
-    padding-top: 3px;
     background: none;
 }
 
@@ -702,39 +701,45 @@ img:hover {
     background-color: #333333;
     padding-top: 40px;
 }
-@media (max-width:900px){
-    #footer-section{
+
+@media (max-width:900px) {
+    #footer-section {
         flex-wrap: wrap;
     }
 }
 
 .about-section {
-    font-size: 13px;
     color: #cccccc;
     font-family: "Montserrat";
     text-align: center;
 }
-.about-section h3{
+
+.about-section h3 {
     font-size: 1.6em;
     letter-spacing: 3px;
     color: #dddddd;
     font-family: "Montserrat";
     font-weight: lighter;
     text-align: center;
+    font-weight: 400;
 }
 
 .abt-para {
-    padding: 10px 20px;
-    margin: 10px 45px;
+    padding: 10px 10px;
+    margin: 10px 40px;
+    font-size: 12px;
+    text-align: center;
+    line-height: 1.8;
+    word-spacing: 1.5px;
 }
 
 #media2 {
     background-color: #e6e7e6;
-    margin: 0px 110px;
+    margin: 0 auto;
     padding-top: 5px;
     padding-bottom: 5px;
     border-radius: 30px;
-    /* width: 110px; */
+    width: 110px;
     text-align: center;
 }
 
@@ -744,18 +749,16 @@ img:hover {
 
 .re-post-div {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     flex-wrap: wrap;
-    /* width: 75%; */
-    /* margin: 20px 0; */
-    /* padding: 10px; */
-    /* border: 2px solid black; */
+    margin: 20px 0;
+    padding-left: 10px;
 }
 
 .re-post-div, .recent-img {
     display: flex;
     flex-wrap: wrap;
-    padding: 5px;
+    padding: 2px;
 }
 
 .rc-img {
@@ -781,42 +784,48 @@ img:hover {
 
 .green {
     background-color: #54d154;
+    font-family: "Montserrat";
+    font-weight: lighter;
 }
 
 .yellow {
     background-color: #ffba00;
+    font-family: "Montserrat";
+    font-weight: lighter;
 }
 
 .blue {
     background-color: #089dea;
+    font-family: "Montserrat";
+    font-weight: lighter;
 }
 
 .orange {
     background-color: #f34d04;
+    font-family: "Montserrat";
+    font-weight: lighter;
 }
 
 .about-section {
-    border: 2px solid black;
     width: 100%;
 }
 
 .recent-post-section {
-    border: 2px solid black;
     width: 100%;
 }
 
 .contact-us-section {
-    border: 2px solid black;
     width: 100%;
 }
 
-.recent-post-section h3 {
+.contact-us-section h3, .recent-post-section h3 {
     font-size: 1.4em;
     letter-spacing: 3px;
     color: #dddddd;
     font-family: "Montserrat";
     font-weight: lighter;
     text-align: center;
+    font-weight: 400;
 }
 
 .heading-line {
@@ -825,5 +834,96 @@ img:hover {
     margin: 0 auto;
 }
 
+.contact-p-section {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    color: #dddddd;
+    font-size: 14px;
+    padding: 20px 0;
+}
 
+.contact-p-section p {
+    margin-bottom: 0;
+    font-family: "Montserrat";
+    font-weight: lighter;
+}
+
+.form-section {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.inpt1, .inpt2, .inpt3, .inpt4 {
+    width: 324px;
+    margin-top: 5px;
+    border: none;
+}
+
+.inpt1, .inpt2, .inpt3 {
+    background-color: #444444;
+}
+
+.inpt1 {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.inpt4 {
+    background-color: #2b9b2b;
+    color: white;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    margin-top: 0;
+}
+
+::placeholder {
+    font-size: 16px;
+    padding: 0 10px;
+    color: #717171;
+}
+.back-logo-section{
+    background-color: rgba(0,0,0,0.8);
+    padding-top: 20px;
+    padding-bottom: 30px;
+    
+}
+.back-logo-section h5{
+    color:black;
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 3px;
+
+}
+#heading-line {
+    border-bottom: 2px solid black;
+    width: 2%;
+    margin: 0 auto;
+
+
+}
+
+.back-logos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 30px;
+}
+.made-by{
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 5px;
+}
+.fa-heart{
+    color: white;
+    padding:5px;
+}
+.fa-heart:hover{
+    color: red;
+    cursor: pointer;
+}
 /* footer section end */
