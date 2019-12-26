@@ -912,6 +912,15 @@ img:hover {
     flex-wrap: wrap;
     padding-top: 30px;
 }
+@media (max-width:900px) {
+   .back-logos{
+       width: 50%;
+       margin: 0 auto;
+       padding: 10px;
+       flex-wrap: wrap;
+    }
+}
+
 .made-by{
     background-color: black;
     text-align: center;
