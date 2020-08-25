@@ -4,5 +4,5 @@ This project is a simple PSD to HTML UI work. You can go through my work here by
 
 > https://mariumtech2000.github.io/psdHtml/
 
- Languages are used : HTML, CSS
+ Languages are used : HTML, CSS &
  Framework are used : Bootstrap
